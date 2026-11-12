@@ -1,0 +1,142 @@
+// ─────────────────────────────────────────────────────────────
+//  TODO el contenido del regalo vive aquí. Edita este archivo.
+//  Cada texto es { es, en } para el selector de idioma.
+// ─────────────────────────────────────────────────────────────
+export type L = { es: string; en: string };
+const l = (es: string, en: string): L => ({ es, en });
+
+export const gift = {
+  to: "Vanesa",
+  toShort: "Vane",
+  from: "Francisco",
+  fromShort: "Fran",
+  couple: "Vane y Fran",
+  brand: { name: "Fran & Vane", short: "F&V", tag: "F & V" },
+  date: "2026-11-14", // fecha que sale en la portada
+  startDate: "2026-07-14", // inicio de la relación → contador de días
+  startTime: "11:30", // hora exacta en que pidió ser novia (24 h, hora del dispositivo)
+  quote: l(
+    "Espero que te guste, mi amor. ❤️ Lo hice con todo mi corazón, solo para ti.",
+    "I hope you like it, my love. ❤️ I made it with all my heart, just for you."
+  ),
+  hero: "/img/hero.jpg",
+  song: {
+    title: "El Amor de mi vida",
+    artist: "La Adictiva",
+    cover: "/img/album.jpg",
+    audio: "/audio/song.mp3",
+  },
+  gallery: ["/img/g1.jpg", "/img/g2.jpg", "/img/g3.jpg", "/img/g4.jpg", "/img/g5.jpg", "/img/g6.jpg"],
+  letter: {
+    es: [
+      "Hola, mi amor.",
+      "Si estás leyendo esto es porque quería regalarte algo un poco diferente. Algo que no se guarda en una caja, sino en el corazón.",
+      "Todavía me acuerdo del día en que empezamos esta historia. Quién me iba a decir que aquel momento iba a convertirse en uno de los más importantes de mi vida. Desde entonces, has llenado mis días de risas, de calma y de un montón de recuerdos que nunca quiero olvidar.",
+      "Hemos vivido momentos muy bonitos, pero también otros que nos han hecho más fuertes. Y si algo he aprendido de nosotros es que, pase lo que pase, siempre merece la pena seguir caminando de tu mano.",
+      "Gracias por estar cuando más te he necesitado, por creer en mí incluso cuando yo dudaba y por hacer que cualquier lugar sea mi lugar favorito si tú estás allí.",
+      "No sé qué nos deparará el futuro, pero sí una cosa: quiero seguir creando recuerdos contigo, uno detrás de otro.",
+      "Te quiero muchísimo. Y ojalá, dentro de muchos años, podamos volver a leer esta carta y sonreír al recordar todo lo que hemos vivido.",
+      "Con todo mi amor, Fran ❤️",
+    ],
+    en: [
+      "Hi, my love.",
+      "If you're reading this it's because I wanted to give you something a little different. Something that isn't kept in a box, but in the heart.",
+      "I still remember the day we started this story. Who would have said that moment would become one of the most important of my life. Since then you've filled my days with laughter, calm and a bunch of memories I never want to forget.",
+      "We've lived beautiful moments, but also others that made us stronger. And if I've learned anything about us, it's that whatever happens, it's always worth walking on hand in hand.",
+      "Thank you for being there when I needed you most, for believing in me even when I doubted, and for making any place my favorite place if you're there.",
+      "I don't know what the future holds, but I know one thing: I want to keep creating memories with you, one after another.",
+      "I love you so much. And hopefully, many years from now, we can read this letter again and smile remembering everything we've lived.",
+      "With all my love, Fran ❤️",
+    ],
+  },
+  timeline: [
+    { date: "2026-03-18", avatar: "/img/a1.jpg", title: l("Un simple mensaje", "A simple message"),
+      text: l("Para ti a lo mejor es otra fecha, pero yo la tomo como el punto de partida: el día en que un simple mensaje abrió la puerta a un mundo que ni en sueños imaginé conocer. Todo pasó así, de repente, cuando me comenzaste a contar las cosas que te pasaban en tu vida y así se volvió una comunicación más cercana, aunque no constante. Fue el comienzo de lo que vivimos hoy.",
+              "For you it may be another date, but I take it as the starting point: the day a simple message opened the door to a world I never even dreamed of knowing. It all happened so suddenly, when you started telling me what was going on in your life, and that's how our communication grew closer, though not constant. It was the beginning of what we live today.") },
+    { date: "2026-03-20", avatar: "/img/a2.jpg", title: l("Mensajes que se borran", "Messages that disappear"),
+      text: l("A pesar de que solo habían pasado 2 días, no sé en qué momento la comunicación se volvió más frecuente, al punto de pedirte de favor que borraras los chats para no tener problemas con tu familia o pareja en ese momento. Desde esa fecha nuestros mensajes se borran cada 24 horas, por precaución, digo yo… pero hemos tenido más problemas que mandados a hacer.",
+              "Even though only 2 days had passed, I don't know at what point our communication became more frequent, to the point of asking you to please delete the chats so you wouldn't have problems with your family or partner at the time. Since that date our messages disappear every 24 hours, as a precaution, I say… but we've had more problems than you can count.") },
+    { date: "2026-07-14", avatar: "/img/a3.jpg", title: l("Una fecha inolvidable", "An unforgettable date"),
+      text: l("Para ti, una fecha inolvidable; para mí, el día que volví a sentirme joven. Sé que guardas ese momento como algo muy especial, y cómo olvidar tus nervios, tus manitas heladas, ese gesto que me hiciste cuando te pregunté: ¿querés ser mi novia? Pero viviré con tu respuesta espontánea de ese instante: SÍ QUIERO. Desde ese día hemos tenido días buenos y malos, pero aquí estamos, luchando día a día por esto que estamos construyendo y sintiendo. TE AMO.",
+              "For you, an unforgettable date; for me, the day I felt young again. I know you keep that moment as something very special, and how could I forget your nerves, your cold little hands, that gesture you made when I asked: will you be my girlfriend? But I'll live with your spontaneous answer in that instant: YES, I DO. Since that day we've had good days and bad ones, but here we are, fighting day by day for what we are building and feeling. I LOVE YOU.") },
+  ],
+  voice: { audio: "/audio/voice.mp3" },
+  // Lugares reales con los que sueñan. (lat/lng aproximados; ajústalos si quieres el pin exacto)
+  places: [
+    { lat: 13.5000, lng: -88.5450, title: l("Mirador Paradise", "Mirador Paradise"), chip: l("El primero de muchos", "The first of many"),
+      text: l("Es uno de los lugares que espero sea el primero de muchos que puedas conocer conmigo, mi niña.", "It's one of the places I hope will be the first of many you get to discover with me, my girl."), address: "Berlín, Usulután, El Salvador" },
+    { lat: 13.5400, lng: -89.8100, title: l("Atardecer en Decameron", "Sunset at Decameron"), chip: l("Bajo las estrellas", "Under the stars"),
+      text: l("Aquí pretendo hacer realidad uno de mis sueños contigo: ver el atardecer y, por la noche, estar bajo las estrellas junto a ti.", "Here I plan to make one of my dreams come true with you: watching the sunset and, at night, being under the stars beside you."), address: "Decameron Salinitas, Acajutla, Sonsonate, El Salvador" },
+    { lat: 13.6150, lng: -89.0450, title: l("Restaurante Los Llanitos", "Los Llanitos Restaurant"), chip: l("Ruta Panorámica", "Panoramic Route"),
+      text: l("No se puede quedar atrás un lugar donde podamos comer rico, disfrutar la compañía, el clima y la vista.", "We can't leave out a place where we can eat well and enjoy the company, the weather and the view."), address: "Ruta Panorámica, km 24, San Francisco Chinameca, La Paz, El Salvador" },
+    { lat: 13.8417, lng: -89.9575, title: l("Parque El Imposible", "El Imposible Park"), chip: l("Lo haremos posible", "We'll make it possible"),
+      text: l("Aunque su nombre dice que es imposible, nosotros lo haremos posible un día no muy lejano, amor mío.", "Even though its name says it's impossible, we'll make it possible one day not so far away, my love."), address: "Ahuachapán, El Salvador" },
+  ],
+  // Razones por las que te quiero: cada una es una tarjeta que se voltea al tocarla.
+  reasons: [
+    { img: "/img/r1.jpg", title: l("Tu sonrisa", "Your smile"), text: l("Porque con una sola sonrisa tuya se me acomoda el día entero.", "Because one smile from you is enough to set my whole day right.") },
+    { img: "/img/r2.jpg", title: l("Tu calma", "Your calm"), text: l("Porque a tu lado todo se siente tranquilo, hasta los días más difíciles.", "Because everything feels peaceful beside you, even the hardest days.") },
+    { img: "/img/r3.jpg", title: l("Tu forma de creer en mí", "How you believe in me"), text: l("Porque crees en mí incluso cuando yo dudo, y eso me da fuerzas para seguir.", "Because you believe in me even when I doubt, and that gives me the strength to keep going.") },
+    { img: "/img/r4.jpg", title: l("Tu compañía", "Your company"), text: l("Porque contigo cualquier lugar, hasta el más simple, se vuelve mi favorito.", "Because with you any place, even the simplest one, becomes my favorite.") },
+  ],
+  outroPhoto: "/img/outro.jpg",
+  quiz: [
+    { q: l("¿Dónde fue nuestro primer beso?", "Where was our first kiss?"),
+      options: [l("En el grado", "At school"), l("En el Aula CRA", "In the CRA classroom"), l("En su casa", "At her place")], correct: 1 },
+    { q: l("¿Quién dijo “te amo” primero?", "Who said “I love you” first?"),
+      options: [l("Tú", "You"), l("Yo", "Me"), l("Los dos a la vez", "Both at the same time")], correct: 1 },
+    { q: l("¿Cuál fue la fecha en que me enviaste el primer mensaje este año?", "On what date did you send me the first message this year?"),
+      options: [l("10 de enero", "January 10"), l("14 de enero", "January 14"), l("16 de enero", "January 16")], correct: 1 },
+  ],
+  voucher: l("Vale por una salida a cualquiera de los lugares de nuestro mapa. Tú eliges el primero.", "Valid for an outing to any place on our map. You choose the first one."),
+};
+
+export const ui = {
+  brandTag: l("F & V · escanea un recuerdo hecho con cariño", "F & V · scan a memory made with love"),
+  youHaveGift: l("Tienes un regalo", "You have a gift"),
+  for: l("Para", "For"),
+  fromLabel: l("De", "From"),
+  tapPhoto: l("Toca la foto ♥", "Tap the photo ♥"),
+  tapHeart: l("Toca el corazón para descubrir tu regalo", "Tap the heart to discover your gift"),
+  eachTap: l("Cada toque abre un pedacito del recuerdo", "Each tap opens a piece of the memory"),
+  ourSong: l("Nuestra canción", "Our song"),
+  sample: l("Muestra", "Sample"),
+  gallery: l("Galería", "Gallery"),
+  galleryTitle: l("Momentos que no se borran", "Moments that never fade"),
+  letter: l("Carta", "Letter"),
+  memories: l("Recuerdos", "Memories"),
+  timelineTitle: l("Nuestra línea del tiempo", "Our timeline"),
+  daysTogether: l("días juntos", "days together"),
+  hours: l("horas", "hours"),
+  minutes: l("minutos", "minutes"),
+  seconds: l("segundos", "seconds"),
+  sinceDate: l("desde el", "since"),
+  voiceMessage: l("Mensaje de voz", "Voice message"),
+  ourPlaces: l("Lo que vamos a vivir", "What we will live"),
+  mapTitle: l("El mapa de lo que vamos a vivir", "The map of what we will live"),
+  openMap: l("Abrir en Google Maps", "Open in Google Maps"),
+  mapSub: l("Cada punto es un lugar al que sueño llevarte. Y así como tantos que aún no menciono, paso a paso los iremos descubriendo.", "Every point is a place I dream of taking you. And like so many I haven't named yet, step by step we'll discover them."),
+  reasonsEyebrow: l("Razones", "Reasons"),
+  reasonsTitle: l("Razones para quererte y amarte, mi niña", "Reasons to cherish and love you, my girl"),
+  reasonsSub: l("Toca cada tarjeta para descubrirlas", "Tap each card to discover them"),
+  reasonLabel: l("Razón", "Reason"),
+  tapReveal: l("Toca para descubrir", "Tap to reveal"),
+  discovered: l("descubiertas", "discovered"),
+  reasonsEnd: l("Y esto es solo el comienzo… ❤️", "And this is just the beginning… ❤️"),
+  mapHint: l("Toca los puntos del mapa ♥", "Tap the points on the map ♥"),
+  lastSurprise: l("Una última sorpresa", "One last surprise"),
+  thoughtOver: l("Pensabas que el regalo había terminado…", "You thought the gift was over…"),
+  stillHave: l("Pero todavía tengo algo preparado para ti.", "But I still have something ready for you."),
+  discover: l("Descubrir la sorpresa 🧡", "Discover the surprise 🧡"),
+  quizIntro: l("Para descubrir mi última sorpresa tendrás que responder unas preguntas sobre nosotros.", "To discover my last surprise you'll have to answer a few questions about us."),
+  question: l("Pregunta", "Question"),
+  of: l("de", "of"),
+  yes: l("¡Sí! ❤️", "Yes! ❤️"),
+  done: l("Lo has conseguido ❤️", "You did it ❤️"),
+  doneSub: l("Esta era la última sorpresa que tenía preparada para ti.", "This was the last surprise I had prepared for you."),
+  specialVoucher: l("Vale especial", "Special voucher"),
+  backToGift: l("Volver al regalo", "Back to the gift"),
+  months: { es: ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"],
+            en: ["January","February","March","April","May","June","July","August","September","October","November","December"] },
+  of2: l("de", "of"),
+};
